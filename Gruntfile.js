@@ -28,6 +28,9 @@ module.exports = function(grunt) {
         glowl: true
       },
       cloudUnit: {
+        options: {
+          bail: true
+        },
         src: ['test/**/*_spec.js']
       },
     },

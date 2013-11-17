@@ -50,15 +50,15 @@
           process.env.NODE_PARSE_APP_ID = 'APP_ID';
           process.env.NODE_PARSE_REST_API_KEY = 'REST_API_KEY';
           process.env.NODE_PARSE_MASTER_KEY = 'MASTER_KEY';
-          process.env.NODE_USE_PARSE_MASTER_KEY = true;
+          process.env.NODE_USE_PARSE_MASTER_KEY = '1';
         });
 
         afterEach(function() {
           target = null;
-          process.env.NODE_PARSE_APP_ID = undefined;
-          process.env.NODE_PARSE_REST_API_KEY = undefined;
-          process.env.NODE_PARSE_MASTER_KEY = undefined;
-          process.env.NODE_USE_PARSE_MASTER_KEY = undefined;
+          delete process.env.NODE_PARSE_APP_ID;
+          delete process.env.NODE_PARSE_REST_API_KEY;
+          delete process.env.NODE_PARSE_MASTER_KEY;
+          delete process.env.NODE_USE_PARSE_MASTER_KEY;
         });
 
         context('no input parameters', function() {
@@ -70,7 +70,7 @@
             expect(target).to.have.property('applicationId', process.env.NODE_PARSE_APP_ID);
             expect(target).to.have.property('restApiKey', process.env.NODE_PARSE_REST_API_KEY);
             expect(target).to.have.property('masterKey', process.env.NODE_PARSE_MASTER_KEY);
-            expect(target).to.have.property('useMasterKey', process.env.NODE_USE_PARSE_MASTER_KEY);
+            expect(target).to.have.property('useMasterKey', true);
           });
         });
 

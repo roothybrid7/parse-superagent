@@ -3,6 +3,9 @@ parse-superagent
 
 A Parse.com REST client using  superagent.
 
+[![Build Status](https://travis-ci.org/roothybrid7/parse-superagent.png)](https://travis-ci.org/roothybrid7/parse-superagent) [![NPM version](https://badge.fury.io/js/parse-superagent.png)](http://badge.fury.io/js/parse-superagent) [![Dependency Status](https://gemnasium.com/roothybrid7/parse-superagent.png)](https://gemnasium.com/roothybrid7/parse-superagent)
+
+
 ## Install
 
 ```

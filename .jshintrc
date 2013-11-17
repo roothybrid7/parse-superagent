@@ -23,6 +23,7 @@
       "afterEach": false,
       "context": false,
       "it": false,
-      "expect": false
+      "expect": false,
+      "sinon": false
     }
 }

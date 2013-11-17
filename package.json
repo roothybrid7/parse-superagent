@@ -36,7 +36,6 @@
     "grunt-mocha-test": "~0.7.0",
     "chai": "~1.8.1",
     "supertest": "~0.8.1",
-    "mocha-sinon": "~1.0.0",
     "grunt-init": "~0.2.1",
     "sinon": "~1.7.3",
     "sinon-chai": "~2.4.0"

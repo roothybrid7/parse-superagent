@@ -6,13 +6,14 @@
   'use strict';
 
   var path = require('path'),
-      chai = require('chai');
+      chai = require('chai'),
+      sinon = require('sinon');
 
   chai.use(require('sinon-chai'));
-  require('mocha-sinon');
 
   // Set global variables.
   global.expect = chai.expect;
+  global.sinon = sinon;
 
   // Helper plugins.
   module.exports = {

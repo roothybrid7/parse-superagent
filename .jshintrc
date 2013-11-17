@@ -1,0 +1,28 @@
+{
+    "forin": false,
+    "immed": false,
+    "newcap": true,
+    "undef": true,
+    "trailing": true,
+    "-W018": false,
+
+    "debug": true,
+    "expr": true,
+
+    "browser": true,
+    "devel": true,
+    "node": true,
+
+    "passfail": false,
+
+    "globals": {
+      "describe": false,
+      "before": false,
+      "after": false,
+      "beforeEach": false,
+      "afterEach": false,
+      "context": false,
+      "it": false,
+      "expect": false
+    }
+}

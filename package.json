@@ -1,0 +1,44 @@
+{
+  "name": "parse-superagent",
+  "version": "0.0.0",
+  "description": "parse-superagent ================",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roothybrid7/parse-superagent.git"
+  },
+  "keywords": [
+    "node",
+    "parse"
+  ],
+  "author": "Satoshi Ohki <roothybrid7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roothybrid7/parse-superagent/issues"
+  },
+  "homepage": "https://github.com/roothybrid7/parse-superagent",
+  "dependencies": {
+    "superagent": "~0.15.7"
+  },
+  "devDependencies": {
+    "grunt-contrib-copy": "~0.4.1",
+    "lodash": "~2.3.0",
+    "mocha-unfunk-reporter": "~0.3.5",
+    "grunt-notify": "~0.2.16",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "mocha": "~1.14.0",
+    "grunt-mocha-test": "~0.7.0",
+    "chai": "~1.8.1",
+    "supertest": "~0.8.1",
+    "mocha-sinon": "~1.0.0",
+    "grunt-init": "~0.2.1",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0"
+  }
+}

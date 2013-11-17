@@ -1,7 +1,7 @@
 {
   "name": "parse-superagent",
   "version": "0.0.1",
-  "description": "parse-superagent ================",
+  "description": "A Parse.com REST client using superagent.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "grunt mochaTest"

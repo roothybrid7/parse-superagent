@@ -6,12 +6,19 @@ var parseSuperAgent = require('../lib'),
     events = require('events'),
     eventEmitter = new events.EventEmitter();
 
+// Setup the parse keys by environment variables.
 // export NODE_PARSE_APP_ID=<Application ID>
 // export NODE_PARSE_REST_API_KEY=<REST API Key>
 // export NODE_PARSE_MASTER_KEY=<Master Key>
 // export NODE_USE_PARSE_MASTER_KEY=(0|1)
 
-var client = new parseSuperAgent();
+// Or the instantiate arguments.
+var client = new parseSuperAgent(/*{
+  applicationId: '<Application ID>',
+  restApiKey: '<REST API Key>',
+  masterKey: '<Master Key>',
+  useMasterKey: true  # Or false
+}*/);
 
 client.runFunction('hello').end(function(error, response) {
   if (error) {
@@ -149,4 +156,5 @@ eventEmitter.on('fetchAll', function(requests) {
       }
       console.log(response.body);
       // => [ { success: true }, { success: true } ]
+    });
 });

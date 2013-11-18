@@ -3,7 +3,7 @@ node_js:
   - "0.10"
 env:
   - NODE_ENV=production
-  - NODE_ENV=testing
+    #  - NODE_ENV=testing
 before_script:
   - npm install -g grunt-cli
 after_script:

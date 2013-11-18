@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "0.10.22"
 env:
-  - NODE_ENV=production
+  - NODE_ENV=development
   - NODE_ENV=testing
 before_install:
   - npm install -g grunt-cli
